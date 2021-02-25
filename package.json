@@ -15,5 +15,9 @@
     "react-icons": "^4.2.0",
     "sass": "^1.32.8",
     "styled-components": "^5.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.20.0",
+    "prettier": "^2.2.1"
   }
 }
