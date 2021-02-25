@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Header from '../components/header';
 
 const Home = () => (
-  <div>
+  <>
     <Head>
       <title>VTuber Minecraft Skins</title>
       <link rel="icon" href="/favicon.ico" />
@@ -19,7 +19,7 @@ const Home = () => (
     </Head>
 
     <Header />
-  </div>
+  </>
 );
 
 export default Home;
