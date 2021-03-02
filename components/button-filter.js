@@ -22,29 +22,45 @@ const StyledButton = styled(Button)`
   margin: 2px;
 `;
 
-const renderButtons = (affiliation, vtubers) => (
-  <>
-    <Title>{affiliation}</Title>
-    <ButtonWrapper>
-      {vtubers.map((vtuber) => (
-        <StyledButton
-          variant={vtuber.gender == 'f' ? 'outline-danger' : 'outline-primary'}
-          key={vtuber.minecraftUUID}
-          value={vtuber.minecraftUUID}
-        >
-          {vtuber.name}
-        </StyledButton>
-      ))}
-    </ButtonWrapper>
-  </>
-);
+const ButtonFilter = ({
+  vtubers,
+  selectedMinecraftUUID,
+  onSelectedMinecraftUUID,
+}) => {
+  function handleSelectedMinecraftUUI(e) {
+    onSelectedMinecraftUUID(e.target.getAttribute('value'));
+  }
 
-const ButtonFilter = ({ vtubers }) => (
-  <>
-    {renderButtons('Hololive', vtubers.hololive)}
-    {renderButtons('Nijisanji', vtubers.nijisanji)}
-    {renderButtons('Independent', vtubers.independent)}
-  </>
-);
+  const renderButtons = (affiliation, data) => (
+    <>
+      <Title>{affiliation}</Title>
+      <ButtonWrapper>
+        {data.map((vtuber) => (
+          <StyledButton
+            variant={
+              vtuber.gender === 'f' ? 'outline-danger' : 'outline-primary'
+            }
+            key={vtuber.minecraftUUID}
+            value={vtuber.minecraftUUID}
+            active={
+              selectedMinecraftUUID === vtuber.minecraftUUID ? 'active' : ''
+            }
+            onClick={handleSelectedMinecraftUUI}
+          >
+            {vtuber.name}
+          </StyledButton>
+        ))}
+      </ButtonWrapper>
+    </>
+  );
+
+  return (
+    <>
+      {renderButtons('Hololive', vtubers.hololive)}
+      {renderButtons('Nijisanji', vtubers.nijisanji)}
+      {renderButtons('Independent', vtubers.independent)}
+    </>
+  );
+};
 
 export default ButtonFilter;

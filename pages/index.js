@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Head from 'next/head';
 import Header from '../components/header';
 import ButtonFilter from '../components/button-filter';
@@ -9,24 +10,36 @@ export const getStaticProps = async () => ({
   },
 });
 
-const Home = ({ vtubersDataList }) => (
-  <>
-    <Head>
-      <title>VTuber Minecraft Skins</title>
-      <meta charset="UTF-8" />
-      <link rel="icon" href="/favicon.ico" />
-      <meta name="author" content="Nokz" />
-      <meta
-        name="description"
-        content="Check out every VTuber's Minecraft skin."
-      />
-      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <meta name="robots" content="index, follow" />
-    </Head>
+const Home = ({ vtubersDataList }) => {
+  const [selectedMinecraftUUID, setSelectedMinecraftUUID] = useState('');
 
-    <Header />
-    <ButtonFilter vtubers={vtubersDataList.vtubers} />
-  </>
-);
+  function handleSelectedMinecraftUUID(minecraftUUID) {
+    setSelectedMinecraftUUID(minecraftUUID);
+  }
+
+  return (
+    <>
+      <Head>
+        <title>VTuber Minecraft Skins</title>
+        <meta charset="UTF-8" />
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="author" content="Nokz" />
+        <meta
+          name="description"
+          content="Check out every VTuber's Minecraft skin."
+        />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="robots" content="index, follow" />
+      </Head>
+
+      <Header />
+      <ButtonFilter
+        vtubers={vtubersDataList.vtubers}
+        selectedMinecraftUUID={selectedMinecraftUUID}
+        onSelectedMinecraftUUID={handleSelectedMinecraftUUID}
+      />
+    </>
+  );
+};
 
 export default Home;
