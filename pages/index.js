@@ -13,6 +13,7 @@ const Home = ({ vtubersDataList }) => (
   <>
     <Head>
       <title>VTuber Minecraft Skins</title>
+      <meta charset="UTF-8" />
       <link rel="icon" href="/favicon.ico" />
       <meta name="author" content="Nokz" />
       <meta
@@ -20,10 +21,11 @@ const Home = ({ vtubersDataList }) => (
         content="Check out every VTuber's Minecraft skin."
       />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <meta name="robots" content="index, follow" />
     </Head>
 
     <Header />
-    <ButtonFilter />
+    <ButtonFilter vtubers={vtubersDataList.vtubers} />
   </>
 );
 

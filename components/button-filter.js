@@ -22,24 +22,28 @@ const StyledButton = styled(Button)`
   margin: 2px;
 `;
 
-const ButtonFilter = () => (
+const renderButtons = (affiliation, vtubers) => (
   <>
-    <Title>Hololive</Title>
+    <Title>{affiliation}</Title>
     <ButtonWrapper>
-      <StyledButton variant="outline-primary">Tokoyami Towa</StyledButton>
-      <StyledButton variant="outline-primary">Rushia Uruha</StyledButton>
-      <StyledButton variant="outline-primary">Gawr Gura</StyledButton>
-      <StyledButton variant="outline-primary">Ayame Nakiri</StyledButton>
-      <StyledButton variant="outline-primary">Minato Aqua</StyledButton>
+      {vtubers.map((vtuber) => (
+        <StyledButton
+          variant={vtuber.gender == 'f' ? 'outline-danger' : 'outline-primary'}
+          key={vtuber.minecraftUUID}
+          value={vtuber.minecraftUUID}
+        >
+          {vtuber.name}
+        </StyledButton>
+      ))}
     </ButtonWrapper>
-    <Title>Nijisanji</Title>
-    <ButtonWrapper>
-      <StyledButton variant="outline-danger">Rindou Mikoto</StyledButton>
-      <StyledButton variant="outline-danger">Lize Helesta</StyledButton>
-      <StyledButton variant="outline-danger">Tsukina Mito</StyledButton>
-      <StyledButton variant="outline-danger">Yuki Chihiro</StyledButton>
-      <StyledButton variant="outline-danger">Higuchi Kaede</StyledButton>
-    </ButtonWrapper>
+  </>
+);
+
+const ButtonFilter = ({ vtubers }) => (
+  <>
+    {renderButtons('Hololive', vtubers.hololive)}
+    {renderButtons('Nijisanji', vtubers.nijisanji)}
+    {renderButtons('Independent', vtubers.independent)}
   </>
 );
 

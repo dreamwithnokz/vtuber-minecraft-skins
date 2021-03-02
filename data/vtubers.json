@@ -1,44 +1,40 @@
 {
   "vtubers": {
-    "hololive": {
-      "male": [
-        {
-          "name": "Yukoku Roberu",
-          "minecraftUUID": "79aed2d1e49842eab7fee98f7a807e69"
-        }
-      ],
-      "female": [
-        {
-          "name": "Tokoyami Towa",
-          "minecraftUUID": "8d257d0057cd4bb5a75a4ee476f72953"
-        },
-        {
-          "name": "Uruha Rushia",
-          "minecraftUUID": "a8d496969a904a3f8f167f93c16ec6ec"
-        },
-        {
-          "name": "Gawr Gura",
-          "minecraftUUID": "4b05d8d3236243c29494b2866c701267"
-        }
-      ]
-    },
-    "nijisanji": {
-      "male": [],
-      "female": [
-        {
-          "name": "Rindou Mikoto",
-          "minecraftUUID": "557cd2e2fc5140b3ba43b1ca57694a93"
-        }
-      ]
-    },
-    "independent": {
-      "male": [],
-      "female": [
-        {
-          "name": "Tenjin Kotone",
-          "minecraftUUID": "408629fd8ccc441daae1d5e77f7ca559"
-        }
-      ]
-    }
+    "hololive": [
+      {
+        "name": "Yukoku Roberu",
+        "minecraftUUID": "79aed2d1e49842eab7fee98f7a807e69",
+        "gender": "m"
+      },
+      {
+        "name": "Tokoyami Towa",
+        "minecraftUUID": "8d257d0057cd4bb5a75a4ee476f72953",
+        "gender": "f"
+      },
+      {
+        "name": "Uruha Rushia",
+        "minecraftUUID": "a8d496969a904a3f8f167f93c16ec6ec",
+        "gender": "f"
+      },
+      {
+        "name": "Gawr Gura",
+        "minecraftUUID": "4b05d8d3236243c29494b2866c701267",
+        "gender": "f"
+      }
+    ],
+    "nijisanji": [
+      {
+        "name": "Rindou Mikoto",
+        "minecraftUUID": "557cd2e2fc5140b3ba43b1ca57694a93",
+        "gender": "f"
+      }
+    ],
+    "independent": [
+      {
+        "name": "Tenjin Kotone",
+        "minecraftUUID": "408629fd8ccc441daae1d5e77f7ca559",
+        "gender": "f"
+      }
+    ]
   }
 }
