@@ -1,8 +1,15 @@
 import Head from 'next/head';
 import Header from '../components/header';
 import ButtonFilter from '../components/button-filter';
+import vtubersData from '../data/vtubers.json';
 
-const Home = () => (
+export const getStaticProps = async () => ({
+  props: {
+    vtubersDataList: vtubersData,
+  },
+});
+
+const Home = ({ vtubersDataList }) => (
   <>
     <Head>
       <title>VTuber Minecraft Skins</title>
