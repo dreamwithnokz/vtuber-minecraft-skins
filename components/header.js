@@ -3,6 +3,8 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
   margin-top: 2rem;
   margin-bottom: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 `;
 
 const Title = styled.h1`
@@ -11,6 +13,7 @@ const Title = styled.h1`
   font-size: 2em;
   text-align: center;
   margin-bottom: 0.2em;
+  font-weight: bold;
 `;
 
 const Description = styled.p`
