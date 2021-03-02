@@ -27,9 +27,8 @@ const ButtonFilter = ({
   selectedMinecraftUUID,
   onSelectedMinecraftUUID,
 }) => {
-  function handleSelectedMinecraftUUI(e) {
+  const handleSelectedMinecraftUUI = (e) =>
     onSelectedMinecraftUUID(e.target.getAttribute('value'));
-  }
 
   const renderButtons = (affiliation, data) => (
     <>

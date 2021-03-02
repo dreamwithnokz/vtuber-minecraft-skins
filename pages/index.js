@@ -13,9 +13,8 @@ export const getStaticProps = async () => ({
 const Home = ({ vtubersDataList }) => {
   const [selectedMinecraftUUID, setSelectedMinecraftUUID] = useState('');
 
-  function handleSelectedMinecraftUUID(minecraftUUID) {
+  const handleSelectedMinecraftUUID = (minecraftUUID) =>
     setSelectedMinecraftUUID(minecraftUUID);
-  }
 
   return (
     <>
