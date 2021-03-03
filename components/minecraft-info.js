@@ -1,9 +1,14 @@
 import styled from 'styled-components';
 import Image from 'next/image';
-import { Button, Carousel } from 'react-bootstrap';
+import { Button, Carousel, Spinner } from 'react-bootstrap';
 
 const Wrapper = styled.div`
   margin: 0 1rem 1rem 1rem;
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
 `;
 
 const Container = styled.div`
@@ -16,6 +21,7 @@ const Container = styled.div`
 const LeftContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  height:100%;
 `;
 
 const InfoLeftInnerContainer = styled.div`
@@ -23,7 +29,10 @@ const InfoLeftInnerContainer = styled.div`
   flex-direction: column;
 `;
 
-const ImageLeftInnerContainer = styled.div``;
+const ImageLeftInnerContainer = styled.div`
+  display:flex;
+  align-items: center;
+`;
 
 const Name = styled.h3`
   margin: 0;

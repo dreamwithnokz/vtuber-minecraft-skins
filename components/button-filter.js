@@ -14,6 +14,10 @@ const ButtonWrapper = styled.div`
   margin: 1rem 1rem 2rem 1rem;
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: 768px) {
+    margin: 1rem 4rem 2rem 4rem;
+  }
 `;
 
 const StyledButton = styled(Button)`
