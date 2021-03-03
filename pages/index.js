@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Head from 'next/head';
 import Header from '../components/header';
+import MinecraftInfo from '../components/minecraft-info';
 import ButtonFilter from '../components/button-filter';
 import vtubersData from '../data/vtubers.json';
 
@@ -11,16 +12,19 @@ export const getStaticProps = async () => ({
 });
 
 const Home = ({ vtubersDataList }) => {
+  const [selectedVtuberName, setSelectedVtuberName] = useState('');
   const [selectedMinecraftUUID, setSelectedMinecraftUUID] = useState('');
 
-  const handleSelectedMinecraftUUID = (minecraftUUID) =>
+  const handleSelected = (vtuberName, minecraftUUID) => {
+    setSelectedVtuberName(vtuberName);
     setSelectedMinecraftUUID(minecraftUUID);
+  };
 
   return (
     <>
       <Head>
         <title>VTuber Minecraft Skins</title>
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <link rel="icon" href="/favicon.ico" />
         <meta name="author" content="Nokz" />
         <meta
@@ -32,10 +36,16 @@ const Home = ({ vtubersDataList }) => {
       </Head>
 
       <Header />
+      {selectedMinecraftUUID ? (
+        <MinecraftInfo
+          vtuberName={selectedVtuberName}
+          minecraftUUID={selectedMinecraftUUID}
+        />
+      ) : null}
       <ButtonFilter
         vtubers={vtubersDataList.vtubers}
         selectedMinecraftUUID={selectedMinecraftUUID}
-        onSelectedMinecraftUUID={handleSelectedMinecraftUUID}
+        onSelected={handleSelected}
       />
     </>
   );

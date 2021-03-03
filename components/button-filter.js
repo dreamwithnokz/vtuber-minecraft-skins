@@ -22,13 +22,9 @@ const StyledButton = styled(Button)`
   margin: 2px;
 `;
 
-const ButtonFilter = ({
-  vtubers,
-  selectedMinecraftUUID,
-  onSelectedMinecraftUUID,
-}) => {
-  const handleSelectedMinecraftUUI = (e) =>
-    onSelectedMinecraftUUID(e.target.getAttribute('value'));
+const ButtonFilter = ({ vtubers, selectedMinecraftUUID, onSelected }) => {
+  const handleSelected = (e) =>
+    onSelected(e.target.getAttribute('name'), e.target.getAttribute('value'));
 
   const renderButtons = (affiliation, data) => (
     <>
@@ -41,10 +37,11 @@ const ButtonFilter = ({
             }
             key={vtuber.minecraftUUID}
             value={vtuber.minecraftUUID}
+            name={vtuber.name}
             active={
               selectedMinecraftUUID === vtuber.minecraftUUID ? 'active' : ''
             }
-            onClick={handleSelectedMinecraftUUI}
+            onClick={handleSelected}
           >
             {vtuber.name}
           </StyledButton>
