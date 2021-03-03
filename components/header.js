@@ -29,6 +29,10 @@ const Header = () => (
     <Description>
       Choose a VTuber below to show the minecraft skin they are using.
     </Description>
+    <Description>
+      This web app uses mc-heads to fetch the skins, so if it&apos;s showing the
+      default skin, that is due to the limitations of the API.
+    </Description>
   </Wrapper>
 );
 
