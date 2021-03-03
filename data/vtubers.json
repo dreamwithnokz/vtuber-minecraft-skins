@@ -2,11 +2,6 @@
   "vtubers": {
     "hololive": [
       {
-        "name": "Yukoku Roberu",
-        "minecraftUUID": "79aed2d1e49842eab7fee98f7a807e69",
-        "gender": "m"
-      },
-      {
         "name": "Tokoyami Towa",
         "minecraftUUID": "8d257d0057cd4bb5a75a4ee476f72953",
         "gender": "f"
@@ -17,15 +12,280 @@
         "gender": "f"
       },
       {
+        "name": "Tokino Sora",
+        "minecraftUUID": "a6a4d2a940304927b4829499a6f6baaf",
+        "gender": "f"
+      },
+      {
+        "name": "Natsuiro Matsuri",
+        "minecraftUUID": "5d4814bd54ec4461952a3557b9db9a51",
+        "gender": "f"
+      },
+      {
+        "name": "Sakura Miko",
+        "minecraftUUID": "848f57f01966478ebac0935bddae04f8",
+        "gender": "f"
+      },
+      {
+        "name": "Ookami Mio",
+        "minecraftUUID": "8a0174727d0f4c4e87f69cda380dccab",
+        "gender": "f"
+      },
+      {
         "name": "Gawr Gura",
         "minecraftUUID": "4b05d8d3236243c29494b2866c701267",
         "gender": "f"
+      },
+      {
+        "name": "Roboco",
+        "minecraftUUID": "132dfbe1071d4932a5e0bdc323537bd4",
+        "gender": "f"
+      },
+      {
+        "name": "Hoshimachi Suisei",
+        "minecraftUUID": "196fa7f2af434ec1b7252e2716e16247",
+        "gender": "f"
+      },
+      {
+        "name": "AZKi",
+        "minecraftUUID": "031fd87e83a443adaf6271a3e4dc5b34",
+        "gender": "f"
+      },
+      {
+        "name": "Yozora Mel",
+        "minecraftUUID": "ece6a72b8cd4497bb01faed07229fa3e",
+        "gender": "f"
+      },
+      {
+        "name": "Shirakami Fubuki",
+        "minecraftUUID": "703a3d7589884d96a24e1f2cc83c5439",
+        "gender": "f"
+      },
+      {
+        "name": "Aki Rosenthal",
+        "minecraftUUID": "9d7bc2849f61498eb90f92bbf8bc6843",
+        "gender": "f"
+      },
+      {
+        "name": "Akai Haato",
+        "minecraftUUID": "f03a5a886ecc4930ae21081b926348fd",
+        "gender": "f"
+      },
+      {
+        "name": "Minato Aqua",
+        "minecraftUUID": "cbd9353721e9485299fcff459cc4ce41",
+        "gender": "f"
+      },
+      {
+        "name": "Murasaki Shion",
+        "minecraftUUID": "1ffbc76f98ad4c299fcd8d7878b29248",
+        "gender": "f"
+      },
+      {
+        "name": "Nakiri Ayame",
+        "minecraftUUID": "26c349f8d2ac45d9be0802d00be7ffd4",
+        "gender": "f"
+      },
+      {
+        "name": "Yuzuki Choco",
+        "minecraftUUID": "0c3e0035d7ce4efab3adf5a43e2a74f6",
+        "gender": "f"
+      },
+      {
+        "name": "Oozora Subaru",
+        "minecraftUUID": "1f34ec92bf0d40b6b5dbb8b97265d87d",
+        "gender": "f"
+      },
+      {
+        "name": "Nekomata Okayu",
+        "minecraftUUID": "ece77695b2964172a7e4fd1b96503534",
+        "gender": "f"
+      },
+      {
+        "name": "Inugami Korone",
+        "minecraftUUID": "107529675daf47a2be3101f70f0b3294",
+        "gender": "f"
+      },
+      {
+        "name": "Usada Pekora",
+        "minecraftUUID": "3e2550514ea8465aaf4628f019ec7ebb",
+        "gender": "f"
+      },
+      {
+        "name": "Shiranui Flare",
+        "minecraftUUID": "5073760c28cc49e48bfe2561a3f7e8ef",
+        "gender": "f"
+      },
+      {
+        "name": "Shirogane Noel",
+        "minecraftUUID": "a98be009c62d43f191cead7530cab205",
+        "gender": "f"
+      },
+      {
+        "name": "Houshou Marine",
+        "minecraftUUID": "d604942f2b4b4452a8da3dbf83e235c3",
+        "gender": "f"
+      },
+      {
+        "name": "Amane Kanata",
+        "minecraftUUID": "7ec7cca260854eed89c63c0ef6eef5ee",
+        "gender": "f"
+      },
+      {
+        "name": "Kiryu Coco",
+        "minecraftUUID": "7b33e0e22d4a461395ed195e45f17b0f",
+        "gender": "f"
+      },
+      {
+        "name": "Tsunomaki Watame",
+        "minecraftUUID": "d568ad8575b8429aaf5e7e190a6babff",
+        "gender": "f"
+      },
+      {
+        "name": "Himemori Luna",
+        "minecraftUUID": "7624f07c54534c6c88c1f85316bd9e01",
+        "gender": "f"
+      },
+      {
+        "name": "Yukihana Lamy",
+        "minecraftUUID": "23c163a1e2c44790a9ee799e79a3cb56",
+        "gender": "f"
+      },
+      {
+        "name": "Momosuzu Nene",
+        "minecraftUUID": "6252f15b4e9f42079ab9793dee88436c",
+        "gender": "f"
+      },
+      {
+        "name": "Shishiro Botan",
+        "minecraftUUID": "fb72994333524c87ae87ba104a174d3d",
+        "gender": "f"
+      },
+      {
+        "name": "Omaru Polka",
+        "minecraftUUID": "6148828ded79488eb82e55831c709724",
+        "gender": "f"
+      },
+      {
+        "name": "Ayunda Risu",
+        "minecraftUUID": "8b06684f7615489ea1b6e84838d398f2",
+        "gender": "f"
+      },
+      {
+        "name": "Moona Hoshinova",
+        "minecraftUUID": "3800f4215195478bb8f2c3224cc7e041",
+        "gender": "f"
+      },
+      {
+        "name": "Airani Iofifteen",
+        "minecraftUUID": "080461696f7745f783751e11f40488f5",
+        "gender": "f"
+      },
+      {
+        "name": "Kureiji Ollie",
+        "minecraftUUID": "12e1376a64944131aaa3b3c37bf89ba4",
+        "gender": "f"
+      },
+      {
+        "name": "Pavolia Reine",
+        "minecraftUUID": "f91804e566374ac896846921d8b76b5c",
+        "gender": "f"
+      },
+      {
+        "name": "Mori Calliope",
+        "minecraftUUID": "14abe999ac61432aba3f216bbe9454b3",
+        "gender": "f"
+      },
+      {
+        "name": "Takanashi Kiara",
+        "minecraftUUID": "604ed1ffde0b4eef8629dc96cc29d652",
+        "gender": "f"
+      },
+      {
+        "name": "Ninomae Ina'nis",
+        "minecraftUUID": "8237e9c41c114c19b29a67c51f2045b8",
+        "gender": "f"
+      },
+      {
+        "name": "Watson Amelia",
+        "minecraftUUID": "6b6c5fbd07894489b5bf91954a28e821",
+        "gender": "f"
+      },
+      {
+        "name": "Hanasaki Miyabi",
+        "minecraftUUID": "1ea156723e214339be141530b1263b91",
+        "gender": "m"
+      },
+      {
+        "name": "Kanade Izuru",
+        "minecraftUUID": "e75d693cfc03483f9da5a02e83889fd4",
+        "gender": "m"
+      },
+      {
+        "name": "Arurandeisu",
+        "minecraftUUID": "6397ea655d714a6fba68c43149418099",
+        "gender": "m"
+      },
+      {
+        "name": "Rikka",
+        "minecraftUUID": "ff1b88f42d584981ba1328c1328cfbef",
+        "gender": "m"
+      },
+      {
+        "name": "Astel Leda",
+        "minecraftUUID": "7abd4bc10beb4d0aa56009b75aba6bce",
+        "gender": "m"
+      },
+      {
+        "name": "Kishido Temma",
+        "minecraftUUID": "c72c655c59404f5fb53930eddd1c93d2",
+        "gender": "m"
+      },
+      {
+        "name": "Kageyama Shien",
+        "minecraftUUID": "db053738d5c846a2bb967305d5f966e2",
+        "gender": "m"
+      },
+      {
+        "name": "Aragami Oga",
+        "minecraftUUID": "aa2a1a4e11f14aebba9bded7b6236790",
+        "gender": "m"
+      },
+      {
+        "name": "Yukoku Roberu",
+        "minecraftUUID": "79aed2d1e49842eab7fee98f7a807e69",
+        "gender": "m"
       }
     ],
     "nijisanji": [
       {
         "name": "Rindou Mikoto",
         "minecraftUUID": "557cd2e2fc5140b3ba43b1ca57694a93",
+        "gender": "f"
+      },
+      {
+        "name": "Ars Almal",
+        "minecraftUUID": "9044e2f4a4be4eb0821e9122753a7f62",
+        "gender": "f"
+      },
+      {
+        "name": "Onomachi Haruka",
+        "minecraftUUID": "8a8aa1cbd646474f85f3ff9c577478a5",
+        "gender": "f"
+      },
+      {
+        "name": "Eli Conifer",
+        "minecraftUUID": "9cad9f8156244f45863ba8d453431456",
+        "gender": "f"
+      },
+      {
+        "name": "Lize Helesta",
+        "minecraftUUID": "498fcbb42bb549fd961724992a12fb53",
+        "gender": "f"
+      },
+      {
+        "name": "Inui Toko",
+        "minecraftUUID": "7a05d4a37e214aefa843d069b2ad09f8",
         "gender": "f"
       }
     ],
