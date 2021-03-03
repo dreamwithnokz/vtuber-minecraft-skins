@@ -18,6 +18,12 @@ const ButtonWrapper = styled.div`
   @media (min-width: 768px) {
     margin: 1rem 4rem 2rem 4rem;
   }
+
+  @media (min-width: 1200px) {
+    width: 40rem;
+    margin: auto;
+    margin-bottom: 20px;
+  }
 `;
 
 const StyledButton = styled(Button)`
