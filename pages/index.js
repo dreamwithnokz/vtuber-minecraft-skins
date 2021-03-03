@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import Head from 'next/head';
+import styled from 'styled-components';
 import Header from '../components/header';
 import MinecraftInfo from '../components/minecraft-info';
 import ButtonFilter from '../components/button-filter';
+import Footer from '../components/footer';
 import vtubersData from '../data/vtubers.json';
 
 export const getStaticProps = async () => ({
@@ -10,6 +12,11 @@ export const getStaticProps = async () => ({
     vtubersDataList: vtubersData,
   },
 });
+
+const Wrapper = styled.div`
+  min-height: calc(100vh - 185px);
+  margin-bottom: 4rem;
+`;
 
 const Home = ({ vtubersDataList }) => {
   const [selectedVtuberName, setSelectedVtuberName] = useState('');
@@ -35,18 +42,21 @@ const Home = ({ vtubersDataList }) => {
         <meta name="robots" content="index, follow" />
       </Head>
 
-      <Header />
-      {selectedMinecraftUUID ? (
-        <MinecraftInfo
-          vtuberName={selectedVtuberName}
-          minecraftUUID={selectedMinecraftUUID}
+      <Wrapper>
+        <Header />
+        {selectedMinecraftUUID ? (
+          <MinecraftInfo
+            vtuberName={selectedVtuberName}
+            minecraftUUID={selectedMinecraftUUID}
+          />
+        ) : null}
+        <ButtonFilter
+          vtubers={vtubersDataList.vtubers}
+          selectedMinecraftUUID={selectedMinecraftUUID}
+          onSelected={handleSelected}
         />
-      ) : null}
-      <ButtonFilter
-        vtubers={vtubersDataList.vtubers}
-        selectedMinecraftUUID={selectedMinecraftUUID}
-        onSelected={handleSelected}
-      />
+      </Wrapper>
+      <Footer />
     </>
   );
 };

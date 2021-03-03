@@ -21,7 +21,7 @@ const Container = styled.div`
 const LeftContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  height:100%;
+  height: 100%;
 `;
 
 const InfoLeftInnerContainer = styled.div`
@@ -30,7 +30,7 @@ const InfoLeftInnerContainer = styled.div`
 `;
 
 const ImageLeftInnerContainer = styled.div`
-  display:flex;
+  display: flex;
   align-items: center;
 `;
 
