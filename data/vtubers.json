@@ -1,6 +1,6 @@
 {
   "vtubers": {
-    "hololive": [
+    "Hololive": [
       {
         "name": "Tokoyami Towa",
         "minecraftUUID": "8d257d0057cd4bb5a75a4ee476f72953",
@@ -257,7 +257,7 @@
         "gender": "m"
       }
     ],
-    "nijisanji": [
+    "Nijisanji": [
       {
         "name": "Rindou Mikoto",
         "minecraftUUID": "557cd2e2fc5140b3ba43b1ca57694a93",
@@ -289,7 +289,7 @@
         "gender": "f"
       }
     ],
-    "independent": [
+    "Independent": [
       {
         "name": "Tenjin Kotone",
         "minecraftUUID": "408629fd8ccc441daae1d5e77f7ca559",
