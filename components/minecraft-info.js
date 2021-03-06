@@ -1,72 +1,46 @@
 import styled from 'styled-components';
 import Image from 'next/image';
-import { Button, Carousel, Spinner } from 'react-bootstrap';
-
-const Wrapper = styled.div`
-  margin: 0 1rem 1rem 1rem;
-
-  @media (min-width: 768px) {
-    display: flex;
-    justify-content: center;
-  }
-`;
-
-const Container = styled.div`
-  margin: 4px;
-  border: 1px solid #999999;
-  border-radius: 10px;
-  padding: 10px;
-`;
-
-const LeftContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  height: 100%;
-`;
-
-const InfoLeftInnerContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
-const ImageLeftInnerContainer = styled.div`
-  display: flex;
-  align-items: center;
-`;
+import { Row, Col, Button, Carousel, Spinner } from 'react-bootstrap';
 
 const Name = styled.h3`
-  margin: 0;
-  color: #ffffff;
-  font-size: 1.2em;
-  font-weight: bold;
-  flex-grow: 1;
+  display: block;
+  color: rgb(240, 240, 240);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.8);
+`;
+
+const Panel = styled.div`
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.25em;
+  padding: 1.25em;
+  margin-bottom: 1em;
+  box-shadow: inset 0 0 1px 1px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 18em;
 `;
 
 const MinecraftInfo = ({ vtuberName, minecraftUUID }) => (
-  <>
-    <Wrapper>
-      <Container>
-        <LeftContainer>
-          <InfoLeftInnerContainer>
-            <Name>{vtuberName}</Name>
-            <Button
-              variant="success"
-              href={`https://mc-heads.net/download/${minecraftUUID}`}
-            >
-              Download Skin
-            </Button>
-          </InfoLeftInnerContainer>
-          <ImageLeftInnerContainer>
-            <Image
-              src={`https://www.mc-heads.net/head/${minecraftUUID}/left`}
-              height={100}
-              width={100}
-            />
-          </ImageLeftInnerContainer>
-        </LeftContainer>
-      </Container>
-      <Container>
-        <Carousel>
+  <Row className="mt-3">
+    <Col md className="text-center">
+      <Panel>
+        <Name>{vtuberName}</Name>
+        <div className="mt-4">
+          <Image
+            src={`https://www.mc-heads.net/head/${minecraftUUID}/left`}
+            height={100}
+            width={100}
+          />
+        </div>
+        <Button
+          variant="danger"
+          href={`https://mc-heads.net/download/${minecraftUUID}`}
+          className="mt-4 shadow">
+          Download Skin
+        </Button>
+      </Panel>
+    </Col>
+    <Col>
+      <Panel>
+        <Carousel className="h-100">
           <Carousel.Item className="">
             <div className="d-flex justify-content-center w-100">
               <Image
@@ -95,9 +69,9 @@ const MinecraftInfo = ({ vtuberName, minecraftUUID }) => (
             </div>
           </Carousel.Item>
         </Carousel>
-      </Container>
-    </Wrapper>
-  </>
+      </Panel>
+    </Col>
+  </Row>
 );
 
 export default MinecraftInfo;
