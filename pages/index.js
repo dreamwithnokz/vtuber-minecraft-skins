@@ -26,7 +26,9 @@ const Home = ({ vtubersDataList }) => {
 
   const getInitialVtuber = (affiliation) => {
     const affiliationVtubers = vtubersDataList.vtubers[affiliation] || [];
-    return affiliationVtubers.length > 0 ? vtubersDataList.vtubers[affiliation][0] : null;
+    return affiliationVtubers.length > 0
+      ? vtubersDataList.vtubers[affiliation][0]
+      : null;
   };
 
   const handleSelected = (vtuberName, minecraftUUID) => {
@@ -46,11 +48,14 @@ const Home = ({ vtubersDataList }) => {
 
   useEffect(() => {
     const affiliations = Object.keys(vtubersDataList.vtubers) || null;
-    const initialAffiliation = affiliations && affiliations.length > 0 ? affiliations[0] : '';
+    const initialAffiliation =
+      affiliations && affiliations.length > 0 ? affiliations[0] : '';
 
     setSelectedAffiliation(initialAffiliation);
     setSelectedVtuberName(getInitialVtuber(initialAffiliation).name);
-    setSelectedMinecraftUUID(getInitialVtuber(initialAffiliation).minecraftUUID);
+    setSelectedMinecraftUUID(
+      getInitialVtuber(initialAffiliation).minecraftUUID,
+    );
   }, []);
 
   return (
@@ -66,6 +71,7 @@ const Home = ({ vtubersDataList }) => {
         />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="robots" content="index, follow" />
+        <script>0</script>
       </Head>
       <Wrapper>
         <Container>
@@ -74,7 +80,8 @@ const Home = ({ vtubersDataList }) => {
             data={vtubersDataList}
             affiliationKey={selectedAffiliation}
             onAffiliationChange={handleAffiliationChange}
-            onMinecraftUUIDChange={handleMinecraftUUIDChange}/>
+            onMinecraftUUIDChange={handleMinecraftUUIDChange}
+          />
           {selectedMinecraftUUID ? (
             <MinecraftInfo
               vtuberName={selectedVtuberName}
