@@ -319,6 +319,63 @@
         "gender": "f"
       }
     ],
+    "VShojo": [
+      {
+        "name": "Projekt Melody",
+        "minecraftUUID": "707b4dbfd0a247aea76ec542051181a8",
+        "gender": "f"
+      },
+      {
+        "name": "Zentreya",
+        "minecraftUUID": "ee1790bc2fcd49be989722cf33844f41",
+        "gender": "f"
+      },
+      {
+        "name": "Ironmouse",
+        "minecraftUUID": "af454986295c41e1af927ae38495e696",
+        "gender": "f"
+      },
+      {
+        "name": "Apricot",
+        "minecraftUUID":"687f82d732d744aaa86621d8b320562b",
+        "gender":"f"
+      },
+      {
+        "name": "Kson",
+        "minecraftUUID":"6d8690815ef14f7e99e94a6a30ace19d",
+        "gender":"f"
+      },
+      {
+        "name": "Haruka Karibu",
+        "minecraftUUID":"133c734aa2974f72a88995f06c6c6f46",
+        "gender":"f"
+      },
+      {
+        "name": "Henya the Genius",
+        "minecraftUUID": "f68e1eaae2e74ed2a85d209444c67f39",
+        "gender": "f"
+      },
+      {
+        "name": "GEEGA",
+        "minecraftUUID":"32122a2fd17c499d918bf9e9d0dc90de",
+        "gender":"f"
+      },
+      {
+        "name": "Kuro Kurenai",
+        "minecraftUUID":"f7e475c8032348b686cd34efb04956a5",
+        "gender":"m"
+      },
+      {
+        "name": "Matara Kan",
+        "minecraftUUID":"1959e10c60e04ebc9f6770b6ef58c346",
+        "gender":"f"
+      },
+      {
+        "name": "Michi Mochievee",
+        "minecraftUUID": "5041408ce1344d3c9ae52572e03f6a64",
+        "gender":"f"
+      }
+    ],
     "Independent": [
       {
         "name": "Tenjin Kotone",
