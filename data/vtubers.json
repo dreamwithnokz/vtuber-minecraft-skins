@@ -212,6 +212,36 @@
         "gender": "f"
       },
       {
+        "name": "Ceres Fauna",
+        "minecraftUUID": "dda14f252cfd407d8e2058b2d4c8b7bf",
+        "gender": "f"
+      },
+      {
+        "name": "Ouro Kronii",
+        "minecraftUUID": "4ea7903562934c8c994287060f6dd716",
+        "gender": "f"
+      },
+      {
+        "name": "Nanashi Mumei",
+        "minecraftUUID": "952d81364d9044f3948de1084eb8042b",
+        "gender": "f"
+      },
+      {
+        "name": "Hakos Baelz",
+        "minecraftUUID": "5c8ddcbaf19a450c8fddb36fcf244682",
+        "gender": "f"
+      },
+      {
+        "name": "Tsukumo Sana",
+        "minecraftUUID": "c5aae5c79f6a42c29b23562a19fde00f",
+        "gender": "f"
+      },
+      {
+        "name": "IRys",
+        "minecraftUUID": "1cbbf835c97140a49b4e2bd410a0a8e0",
+        "gender": "f"
+      },
+      {
         "name": "Hanasaki Miyabi",
         "minecraftUUID": "1ea156723e214339be141530b1263b91",
         "gender": "m"
@@ -289,7 +319,126 @@
         "gender": "f"
       }
     ],
+    "VShojo": [
+      {
+        "name": "Projekt Melody",
+        "minecraftUUID": "707b4dbfd0a247aea76ec542051181a8",
+        "gender": "f"
+      },
+      {
+        "name": "Zentreya",
+        "minecraftUUID": "ee1790bc2fcd49be989722cf33844f41",
+        "gender": "f"
+      },
+      {
+        "name": "Ironmouse",
+        "minecraftUUID": "af454986295c41e1af927ae38495e696",
+        "gender": "f"
+      },
+      {
+        "name": "Apricot",
+        "minecraftUUID":"687f82d732d744aaa86621d8b320562b",
+        "gender": "f"
+      },
+      {
+        "name": "Kson",
+        "minecraftUUID":"6d8690815ef14f7e99e94a6a30ace19d",
+        "gender": "f"
+      },
+      {
+        "name": "Haruka Karibu",
+        "minecraftUUID":"133c734aa2974f72a88995f06c6c6f46",
+        "gender": "f"
+      },
+      {
+        "name": "Henya the Genius",
+        "minecraftUUID": "f68e1eaae2e74ed2a85d209444c67f39",
+        "gender": "f"
+      },
+      {
+        "name": "GEEGA",
+        "minecraftUUID":"32122a2fd17c499d918bf9e9d0dc90de",
+        "gender": "f"
+      },
+      {
+        "name": "Kuro Kurenai",
+        "minecraftUUID":"f7e475c8032348b686cd34efb04956a5",
+        "gender": "m"
+      },
+      {
+        "name": "Matara Kan",
+        "minecraftUUID":"1959e10c60e04ebc9f6770b6ef58c346",
+        "gender": "f"
+      },
+      {
+        "name": "Michi Mochievee",
+        "minecraftUUID": "5041408ce1344d3c9ae52572e03f6a64",
+        "gender": "f"
+      }
+    ],
+    "Astraline": [
+      {
+        "name": "MerryWeather",
+        "minecraftUUID": "f843b5a90e7b470c853d9877afb064d4",
+        "gender": "m"
+      },
+      {
+        "name": "Lumi",
+        "minecraftUUID": "70bc2316f25e40ed871628025fdd2dea",
+        "gender": "f"
+      },
+      {
+        "name":"Nick Nocturne",
+        "minecraftUUID":"8e861d271de44e099047bebefafed34f",
+        "gender": "m"
+      },
+      {
+        "name": "Alfhilde Odinsdottir",
+        "minecraftUUID": "91faa1147faa4abbb559c00d16471e13",
+        "gender": "m"
+      },
+      {
+        "name": "Fredrik Knudsen",
+        "minecraftUUID": "38b51a93202f4525bced3a1f1e19d670",
+        "gender": "m"
+      }
+    ],
     "Independent": [
+      {
+        "name": "Mint Fantome",
+        "minecraftUUID": "04f0ca52d97843a5872f15196b92d9fa",
+        "gender": "f"
+      },
+      {
+        "name":"Nyanners",
+        "minecraftUUID":"7f604dec710a4b009c8e19ae91cba0fa",
+        "gender": "f"
+      },
+      {
+        "name": "Rose Doodles",
+        "minecraftUUID":"f61c81f3eb6345e6a3d157c13e8d7ebe",
+        "gender": "f"
+      },
+      {
+        "name": "Sushidog",
+        "minecraftUUID":"1d42b66fdd3d4fe1b31c8cd5fe043a94",
+        "gender": "f"
+      },
+      {
+        "name":"MeichaFox",
+        "minecraftUUID":"473e0af60aa042098ddfda369a5f9054",
+        "gender": "f"
+      },
+      {
+        "name": "Arielle VT",
+        "minecraftUUID": "176fb2c5210b430eaa5e2156865c8748",
+        "gender": "f"
+      },
+      {
+        "name": "FroggyLoch",
+        "minecraftUUID": "9982b6a0c80d4670a94d1f1318ddd47f",
+        "gender": "f"
+      },
       {
         "name": "Tenjin Kotone",
         "minecraftUUID": "408629fd8ccc441daae1d5e77f7ca559",
