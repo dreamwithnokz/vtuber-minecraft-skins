@@ -1,3 +1,5 @@
+> No longer maintained
+
 # VTuber Minecraft Skin
 
 A web app that lets you see the current skin that VTubers use in Minecraft.
